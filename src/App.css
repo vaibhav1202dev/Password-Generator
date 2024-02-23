@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.pass-input {
+  background-color: #24232c;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+}
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.content {
+  justify-content: space-between;
+  font-size: 25px;
+  background-color: #24232c;
+  width: 550px;
+}
+.copy-btn {
+  background-color: #24232c;
+  border: none;
+  color: rgb(114, 236, 114);
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.carlen {
+  color: bisque;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.input-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.range {
+  width: 300px;
+  accent-color: rgb(114, 236, 114);
+}
+input[type="checkbox"] {
+  margin: 4px 5px 0 15px;
+  line-height: normal;
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(114, 236, 114);
+}
+
+.check-title {
+  color: white;
+  padding-left: 15px;
+}
+
+.gener-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.generate-btn {
+  background-color: rgb(114, 236, 114);
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  width: 400px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.password-strength {
+  color: rgb(114, 236, 114);
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .pass-input {
+    font-size: 1.5rem;
+  }
+  .copy-btn {
+    font-size: 1.5rem;
+  }
+  .content {
+    font-size: 15px;
+    width: 450px;
+  }
+  .generate-btn {
+    width: 350px;
+  }
+}
+
+.str {
+  color: rgb(114, 249, 99);
+  margin-left: 18rem;
+}

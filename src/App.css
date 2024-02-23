@@ -85,10 +85,16 @@ input[type="checkbox"] {
   border: none;
   border-radius: 8px;
 }
+.generate-btn:hover {
+  background-color: rgb(85, 241, 85);
+  box-shadow: 1px 1px 10px 1px rgb(116, 240, 136);
+}
 
 .password-strength {
   color: rgb(114, 236, 114);
-  margin-left: 10px;
+  margin-left: 20px;
+
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -100,10 +106,13 @@ input[type="checkbox"] {
   }
   .content {
     font-size: 15px;
-    width: 450px;
+    width: 420px;
   }
   .generate-btn {
     width: 350px;
+  }
+  .carlen {
+    justify-content: space-around;
   }
 }
 

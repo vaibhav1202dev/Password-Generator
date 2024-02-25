@@ -12,7 +12,7 @@ function App() {
     { title: "Include Symbols", state: false },
   ]);
   const [copied, setCopied] = useState(false);
-  const { password, generatePassword } = usePasswordGnerator();
+  const { password, errorMessage, generatePassword } = usePasswordGnerator();
 
   const handleCheckboxChange = (index) => {
     const updatedCheckboxData = [...checkboxData];
@@ -32,6 +32,7 @@ function App() {
   return (
     <div className="container">
       <div className="content">
+        {/* Password Input */}
         <div className="header">
           <input
             className="pass-input"
@@ -40,14 +41,18 @@ function App() {
             value={password}
             readOnly
           />
+          {/* Copy Button */}
           <button className="copy-btn" onClick={handleCopy}>
             {copied ? "COPIED" : "COPY"}
           </button>
         </div>
+        {errorMessage && <div className="error-msg">{errorMessage}</div>}
+        {/* Character Length */}
         <div className="carlen">
           <span>Character length</span>
           <span>{length}</span>
         </div>
+        {/* Character Range */}
         <div className="input-range">
           <input
             className="range"
@@ -58,6 +63,7 @@ function App() {
             onChange={(e) => setLength(e.target.value)}
           />
         </div>
+        {/* Checkboxes */}
         <div className="checkboxes">
           {checkboxData.map((checkbox, index) => (
             <div key={index}>
@@ -72,6 +78,7 @@ function App() {
         </div>
 
         <StrengthIndicator password={password} />
+        {/* Generate Button */}
         <div className="gener-btn">
           <button
             className="generate-btn"

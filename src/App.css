@@ -120,3 +120,7 @@ input[type="checkbox"] {
   color: rgb(114, 249, 99);
   margin-left: 18rem;
 }
+.error-msg {
+  color: white;
+  margin-left: 20px;
+}
